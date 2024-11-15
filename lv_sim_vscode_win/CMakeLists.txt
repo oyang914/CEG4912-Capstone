@@ -14,6 +14,7 @@ SET(CMAKE_CXX_FLAGS "-O3")
 
 find_package(SDL2 REQUIRED SDL2)
 include_directories(${SDL2_INCLUDE_DIRS})
+include_directories(${PROJECT_SOURCE_DIR}/user_test/GUI_App/screens/Inc)
 add_executable(main main.c mouse_cursor_icon.c ${SOURCES} ${INCLUDES})
 
 # 拷贝SDL2.dll 文件到 bin目录下
