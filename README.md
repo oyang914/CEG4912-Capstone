@@ -29,15 +29,18 @@ This project focuses on developing a **smartwatch** designed primarily for **mon
 
 ---
 
-How to use docker?
+### How to use docker?
 
 docker build -t lvgl .
 
 docker run -it --rm -e DISPLAY=YourOwnIP:0 -e XDG_RUNTIME_DIR=/tmp -v /tmp/.X11-unix:/tmp/.X11-unix lvgl
-                                ^^^^
-Make sure to change the IP to your host device
 
-Install VcXsrv
-Set the display number to 0
-Start no client
-Disable access control
+*Make sure to change the IP to your host device for the docker run command
+
+IMPORTANT: Install VcXsrv
+
+1. Set the display number to 0
+
+2. Start no client
+
+3. Disable access control
